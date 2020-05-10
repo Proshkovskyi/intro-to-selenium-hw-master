@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'idea'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.0.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+}
+
+test {
+    useTestNG()
+}
